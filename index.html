@@ -55,7 +55,7 @@
 		<section class="hero-section">
 			<div class="container  hero-section__container">
 				<h1 class="hero-section__title">Эффективные решения для вашего бизнеса</h1>
-				<button data-modal-open class="hero-section__button interactive">Заказать услугу</button>
+				<button data-modal-open class="button interactive">Заказать услугу</button>
 			</div>
 		</section>
 		<!-- Преимущества -->
@@ -376,7 +376,42 @@
 					<use href="./images/icon/sprite.svg#icon-close"></use>
 				</svg>
 			</button>
-			<b class="modal__title">Оставьте свои данные, мы вам перезвоним</b>
+			<b class="form__title">Оставьте свои данные, мы вам перезвоним</b>
+			<form class="form" action="" autocomplete="off">
+				<label class="form__field">
+					<input class="form__input interactive" type="text" name="name" placeholder=" ">
+					<span class="form__label">Имя</span>
+					<svg class="form__icon">
+						<use href="./images/icon/sprite.svg#icon-person"></use>
+					</svg>
+				</label>
+				<label class="form__field">
+					<input class="form__input interactive" type="tel" name="tel" placeholder=" ">
+					<span class="form__label">Телефон</span>
+					<svg class="form__icon">
+						<use href="./images/icon/sprite.svg#icon-phone"></use>
+					</svg>
+				</label>
+				<label class="form__field">
+					<input class="form__input interactive" type="email" name="email" placeholder=" ">
+					<span class="form__label">Почта</span>
+					<svg class="form__icon">
+						<use href="./images/icon/sprite.svg#icon-email"></use>
+					</svg>
+				</label>
+				<label class="form__field">
+					<textarea class="form__input form__input--comment interactive" name="comment" rows="5" cols="45" placeholder=" "></textarea>
+					<span class="form__label form__label--comment">Комментарий</span>
+				</label>
+				<label class="form__field--terms">
+					<input class="form__input--terms visually-hidden interactive" name="terms" type="checkbox" value="agreed" />
+					<svg class="form__icon--terms">
+						<use href="./images/icon/sprite.svg#icon-check"></use>
+					</svg>
+					<span class="form__label--terms">Соглашаюсь с рассылкой и принимаю <a href="" class="form__link--terms">Условия договора</a></span>
+				</label>
+				<button type="submit" class="button form__button interactive">Отправить</button>
+			</form>
 		</div>
 	</div>
 	<script src="./js/modal.js"></script>
