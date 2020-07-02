@@ -403,13 +403,17 @@
 					<textarea class="form__input form__input--comment interactive" name="comment" rows="5" cols="45" placeholder=" "></textarea>
 					<span class="form__label form__label--comment">Комментарий</span>
 				</label>
-				<label class="form__field--terms">
-					<input class="form__input--terms visually-hidden interactive" name="terms" type="checkbox" value="agreed" />
-					<svg class="form__icon--terms">
-						<use href="./images/icon/sprite.svg#icon-check"></use>
-					</svg>
-					<span class="form__label--terms">Соглашаюсь с рассылкой и принимаю <a href="" class="form__link--terms">Условия договора</a></span>
-				</label>
+					<!-- <label class="form__field--terms">
+						<input class="form__input--terms visually-hidden interactive" name="terms" type="checkbox" value="agreed" />
+						<svg class="form__icon--terms">
+							<use href="./images/icon/sprite.svg#icon-check"></use>
+						</svg>
+						<span class="form__label--terms">Соглашаюсь с рассылкой и принимаю <a href="" class="form__link--terms">Условия договора</a></span>
+					</label> -->
+				<div class="form__field--terms">
+					<input id="terms" class="form__input--terms visually-hidden interactive" name="terms" type="checkbox" value="agreed" />
+					<label for="terms" class="form__label--terms">Соглашаюсь с рассылкой и принимаю <a href="" class="form__link--terms interactive">Условия договора</a></label>
+				</div>
 				<button type="submit" class="button form__button interactive">Отправить</button>
 			</form>
 		</div>
