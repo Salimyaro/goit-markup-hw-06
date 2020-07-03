@@ -366,6 +366,18 @@
 			</div>
 			<div class="subscribe">
 				<b class="subscribe__title">Подпишитесь на рассылку</b>
+				<form class="subscribe__form js-footer-form" autocomplete="off">
+					<label class="subscribe__field">
+						<input class="subscribe__input interactive" type="email" name="subscribe-email" placeholder=" ">
+						<span class="subscribe__label">E-mail</span>
+					</label>
+					<button type="submit" class="button subscribe__button interactive">
+						<span class="subscribe__button-text">Подписаться</span>
+						<svg class="subscribe__icon">
+							<use href="./images/icon/sprite.svg#icon-send"></use>
+						</svg>
+					</button>
+				</form>
 			</div>
 		</div>
 	</footer>
@@ -377,7 +389,7 @@
 				</svg>
 			</button>
 			<b class="form__title">Оставьте свои данные, мы вам перезвоним</b>
-			<form class="form" action="" autocomplete="off">
+			<form class="form js-speaker-form" action="" autocomplete="off">
 				<label class="form__field">
 					<input class="form__input interactive" type="text" name="name" placeholder=" ">
 					<span class="form__label">Имя</span>
@@ -411,7 +423,7 @@
 						<span class="form__label--terms">Соглашаюсь с рассылкой и принимаю <a href="" class="form__link--terms">Условия договора</a></span>
 					</label> -->
 				<div class="form__field--terms">
-					<input id="terms" class="form__input--terms visually-hidden interactive" name="terms" type="checkbox" value="agreed" />
+					<input id="terms" class="form__input--terms visually-hidden interactive" name="terms" type="checkbox" value="agreed" required/>
 					<label for="terms" class="form__label--terms">Соглашаюсь с рассылкой и принимаю <a href="" class="form__link--terms interactive">Условия договора</a></label>
 				</div>
 				<button type="submit" class="button form__button interactive">Отправить</button>
@@ -419,5 +431,6 @@
 		</div>
 	</div>
 	<script src="./js/modal.js"></script>
+	<script src="./js/test.js"></script>
 </body>
 </html>
